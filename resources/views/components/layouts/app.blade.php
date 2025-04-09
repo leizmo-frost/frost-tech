@@ -219,7 +219,7 @@
     text-align: center;
 }
 
-.projects-section h1 {
+.projects-section h2 {
     font-size: 2.5rem;
     color: #007bff;
     margin-bottom: 40px;
