@@ -441,7 +441,7 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-    color: #007bff; /* Blue hover effect */
+    color: #ffffff; /* Blue hover effect */
 }
 
 /* Responsive Footer */
@@ -490,7 +490,7 @@ footer .social-links a:hover {
 
     <!-- Contact -->
     <section class="contact">
-        @include('livewire.contact')
+        @include('livewire.contact-from')
     </section>
 
     <!-- Footer -->

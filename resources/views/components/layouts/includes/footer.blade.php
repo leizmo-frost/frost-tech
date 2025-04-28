@@ -1,6 +1,5 @@
 <footer class="footer">
     <div class="footer-content">
-      <p><small>&copy; {{ date('Y') }} Frost Tech. All Rights Reserved.</small></p>
       <ul class="social-links" aria-label="My social media profiles">
         <li>
           <a href="https://github.com/leizmo-frost"
@@ -12,7 +11,7 @@
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/lermodiouskaranja
+          <a href="https://linkedin.com/in/lermodious_karanja
 "
              target="_blank"
              rel="noopener noreferrer nofollow"
@@ -39,6 +38,7 @@
           </a>
         </li>
         </ul>
+        <p>&copy; {{ date('Y') }} Frost Tech. All Rights Reserved.</p>
     </div>
   </footer>
 
@@ -62,7 +62,7 @@
 
     .social-links {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.0rem;
       justify-content: center;
       flex-wrap: wrap;
       list-style: none; /* Remove default list styling */
@@ -79,7 +79,7 @@
       font-size: 1.5rem;
       transition: all 0.3s ease;
       text-decoration: none;
-      padding: 0.5rem;
+      padding: 0rem;
       border-radius: 50%;
       width: 2.5rem;
       height: 2.5rem;
@@ -90,7 +90,7 @@
 
     .social-links a:hover {
       color: white;
-      background-color: #1abc9c;
+      background-color: #007bff;
       transform: translateY(-3px);
     }
 
