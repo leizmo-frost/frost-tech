@@ -421,11 +421,11 @@ button:hover {
 
         /* Footer */
         footer {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
-    border-top: 1px solid #e0e0e0;
-    color: #6c757d;
+    border-top: 1px solid #f9f8f8;
+    color: #e4ecf2;
 }
 
 footer .social-links {
@@ -434,7 +434,7 @@ footer .social-links {
 
 footer .social-links a {
     margin: 0 10px;
-    color: #6c757d;
+    color: #000000;
     font-size: 1.5rem;
     text-decoration: none;
     transition: color 0.3s ease;
