@@ -9,16 +9,18 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class Contact extends Mailable
+class Contact extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
+
+     public $formData; // Public property to hold the form data
 
     /**
      * Create a new message instance.
      */
-    public function __construct(private string $name, private string $email, private string $messageContent)
+    public function __construct($formData)
     {
-        //
+        $this->formData = $formData;
     }
 
     /**
@@ -26,8 +28,12 @@ class Contact extends Mailable
      */
     public function envelope(): Envelope
     {
-        return new Envelope(
-            subject: 'New Contact Form Submission from ' . $this->name,
+       return new Envelope(
+            from: new \Illuminate\Mail\Mailables\Address(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME')),
+            subject: 'New Contact Form Submission',
+            replyTo: [
+                new \Illuminate\Mail\Mailables\Address($this->formData['email'], $this->formData['name']),
+            ],
         );
     }
 
@@ -36,12 +42,8 @@ class Contact extends Mailable
      */
     public function content(): Content
     {
-        return new Content(
-            view: 'livewire.contact',
-            with: ['name' => $this->name,
-            'email' => $this->email,
-            'messageContent' => $this->messageContent // renamed to avoid conflict
-            ]
+       return new Content(
+            markdown: 'emails.contact-form', // This will be your Markdown email template
         );
     }
 

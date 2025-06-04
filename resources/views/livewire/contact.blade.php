@@ -16,7 +16,7 @@
           </div>
         @endif
 
-        <form wire:submit.prevent="submit" aria-label="Contact Form">
+        <form wire:submit.prevent="submit" aria-label="Contact Form" action="{{ route('contact.submit') }}" method="POST">
           <div class="form-group">
             <label for="name">Name <span>*</span></label>
             <input type="text" id="name" wire:model.defer="name" placeholder="Your Name" required>
