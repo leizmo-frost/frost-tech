@@ -1,7 +1,6 @@
 <?php
 
 use App\Livewire\Contacts;
-use App\Mail\Contact;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Home;
 

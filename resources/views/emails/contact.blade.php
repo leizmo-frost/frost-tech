@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE >
 <html>
 <head>
-    <title>New Contact Form Submission</title>
+    <title>New Contact</title>
 </head>
 <body>
     <h1>New Contact Form Submission</h1>

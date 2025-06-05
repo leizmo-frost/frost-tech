@@ -43,7 +43,7 @@ class Contact extends Mailable implements ShouldQueue
     public function content(): Content
     {
        return new Content(
-            markdown: 'emails.contact-form', // This will be your Markdown email template
+            markdown: 'emails.contact', // This will be your Markdown email template
         );
     }
 

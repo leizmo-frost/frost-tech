@@ -10,7 +10,7 @@
       <div class="contact-form">
         <h2>Get In Touch</h2>
 
-        @if (session()->has('success'))
+        {{-- @if (session()->has('success'))
           <div style="color: green; margin-bottom: 10px;">
             {{ session('success') }}
           </div>
@@ -36,7 +36,7 @@
           </div>
 
           <button type="submit">Send Message</button>
-        </form>
+        </form> --}}
       </div>
     </div>
   </section>
