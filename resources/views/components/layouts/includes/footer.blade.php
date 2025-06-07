@@ -11,8 +11,7 @@
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/lermodious_karanja
-"
+          <a href="https://linkedin.com/in/lermodious-karanja-44237a2bb"
              target="_blank"
              rel="noopener noreferrer nofollow"
              aria-label="Connect on LinkedIn (opens in new tab)">
@@ -29,14 +28,14 @@
             <span class="sr-only">Instagram</span>
           </a>
         </li>
-        <li>
-          <a href="/"
+        {{-- <li>
+          <a href="mailto:frosttech63@gmail.com"
              rel="noopener noreferrer nofollow"
              aria-label="Contact me via the contact form">
             <i class="fas fa-envelope" aria-hidden="true"></i>
-            <span class="sr-only">Contact</span>
+            <span class="sr-only">Email</span>
           </a>
-        </li>
+        </li> --}}
         </ul>
         <p>&copy; {{ date('Y') }} Frost Tech. All Rights Reserved.</p>
     </div>

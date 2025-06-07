@@ -10,6 +10,10 @@
       <div class="contact-form">
         <h2>Get In Touch</h2>
 
+        <p>
+            click the below to send me a message
+        </p>
+
         {{-- @if (session()->has('success'))
           <div style="color: green; margin-bottom: 10px;">
             {{ session('success') }}
@@ -37,6 +41,19 @@
 
           <button type="submit">Send Message</button>
         </form> --}}
+        {{-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSep-r3afo2Uray6hbUq85-euymPqseYzggvf7REGmvGOkPFHA/viewform?embedded=true"
+        width="550"
+        height="300"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">
+        Loading…
+        </iframe> --}}
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSep-r3afo2Uray6hbUq85-euymPqseYzggvf7REGmvGOkPFHA/viewform"
+            target="_blank"
+            rel="noopener noreferrer">
+            <button type="button">Send Message</button>
+        </a>
       </div>
     </div>
   </section>
