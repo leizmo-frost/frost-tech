@@ -1,4 +1,4 @@
-<footer class="footer">
+<div class="footer">
     <div class="footer-content">
       <ul class="social-links" aria-label="My social media profiles">
         <li>
@@ -37,9 +37,19 @@
           </a>
         </li> --}}
         </ul>
+        <!-- Left-aligned newsletter button -->
+    <div class="newsletter-link">
+      <a href="https://frosttech-newsletter.beehiiv.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        Join my newsletter
+      </a>
+    </div>
+
         <p>&copy; {{ date('Y') }} Frost Tech. All Rights Reserved.</p>
     </div>
-  </footer>
+  </div>
 
   <style>
     .footer {

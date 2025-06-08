@@ -3,12 +3,12 @@
     <div class="projects-grid">
 
       <div class="project-card">
-        <img src="project1.jpg" alt="Screenshot of Project Title 1" loading="lazy">
-        <h3 class="project-card__title">Project Title 1</h3>
+        <img src="{{ asset('images/123.png') }}" alt="Screenshot of Project Title 1" loading="lazy">
+        <h3 class="project-card__title">Newsletter</h3>
         <p class="project-card__description">
-          A brief overview of the project, showcasing key features and the technologies used.
+          This is a newsletter the is based on technology and programming.
         </p>
-        <a href="#" class="project-card__link" target="_blank" rel="noopener noreferrer">View More</a>
+        <a href="https://frosttech-newsletter.beehiiv.com/" class="project-card__link" target="_blank" rel="noopener noreferrer">View More</a>
       </div>
 
       <div class="project-card">
